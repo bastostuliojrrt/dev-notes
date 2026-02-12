@@ -117,7 +117,10 @@ function toggleFixNote(id){
 function getNotes(){
     const notes = JSON.parse(localStorage.getItem("notes") || "[]");
 
-    return notes
+    // ordena os itens através do atributo fixed
+    const orderedNotes = notes.sort((a, b) => (a.fixed > b.fixed ? -1 : 1));
+
+    return orderedNotes;
 }
 
 //Salva a note no localstorage
