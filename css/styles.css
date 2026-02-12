@@ -106,7 +106,9 @@ header{
 .note input{
     height: auto;
     border: none;
+    border-bottom: 1px solid #fff;
     background-color: transparent;
+    padding: 4px;
     outline: none;
     color: #fff;
     font-weight: bold;
